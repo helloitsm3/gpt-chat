@@ -7,6 +7,9 @@ const Home = () => {
   const [chat, setChat] = useState([]);
   const [isGenerating, setIsGenerating] = useState(false);
 
+  /**
+   * This function handles the sending of user input message and receiving the AI response from openAI
+   */
   const callGenerateEndpoint = async () => {
     setIsGenerating(true);
 
@@ -44,12 +47,10 @@ const Home = () => {
         <div className="header">
           <div className="header-title">
             {/* Change your headline here */}
-            <h1>magic blog post generator</h1>
+            <h1>Chat with me</h1>
           </div>
           <div className="header-subtitle">
-            <h2>
-              input the title to your blog post below, we'll generate the rest.
-            </h2>
+            <h2>Input a message and GPT will respond to you</h2>
           </div>
         </div>
 
